@@ -135,8 +135,7 @@ body main section.main-part div.result {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  -webkit-animation: border_color 8s infinite;
-          animation: border_color 8s infinite;
+  animation: border_color 8s infinite;
 }
 body main section.main-part div.result p {
   margin-top: 15px;
@@ -151,15 +150,6 @@ body main section.main-part div.result h2#result-gpa {
   transition: all 0.5s ease;
 }
 
-@-webkit-keyframes scaleUp {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
 @keyframes scaleUp {
   from {
     transform: scale(0);
@@ -168,31 +158,12 @@ body main section.main-part div.result h2#result-gpa {
     transform: scale(1);
   }
 }
-@-webkit-keyframes scaleDown {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0);
-  }
-}
 @keyframes scaleDown {
   from {
     transform: scale(1);
   }
   to {
     transform: scale(0);
-  }
-}
-@-webkit-keyframes border_color {
-  0% {
-    border-color: red;
-  }
-  33% {
-    border-color: limegreen;
-  }
-  66% {
-    border-color: yellow;
   }
 }
 @keyframes border_color {
